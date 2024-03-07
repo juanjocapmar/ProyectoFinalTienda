@@ -1,0 +1,25 @@
+/*Carrousel*/
+#boton-carrousel {
+    border-radius: 50%;
+    background-color:#621C57;
+    width: 10px;
+    height: 10px;
+}
+
+/*Lista imagenes promoción*/
+.list-image-promo {
+    width: 30em;
+    height: 15em;
+}
+
+.button-send-promotion {
+    background-color: rgb(255, 255, 255);
+    border-left:1px white solid;
+    border-top:1px #621C57 solid;
+    border-bottom:1px #621C57 solid;
+    border-right:1px #621C57 solid;
+    
+}
+.button-send-promotion:hover {
+    background-color: #aa619f;
+}

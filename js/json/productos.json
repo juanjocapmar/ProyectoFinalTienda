@@ -1,0 +1,527 @@
+{
+    "productos": [ 
+        {
+            "id": 1,
+            "nombreProducto": "Floral Primavera",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Fragancia fresca y floral perfecta para la primavera.",
+            "precio": 35.99,
+            "stock": 50,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/09/PERFUME-ROSAS.jpg"
+          },
+          {
+            "id": 2,
+            "nombreProducto": "Amaderado Intenso",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Aroma amaderado con notas intensas para ocasiones especiales.",
+            "precio": 49.99,
+            "stock": 30,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/11/PERFUMES-CAROS-HOMBRE.jpg"
+          },
+          {
+            "id": 3,
+            "nombreProducto": "Cítrico Veraniego",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Frescura cítrica perfecta para el verano.",
+            "precio": 29.99,
+            "stock": 70,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/11/PERF-CITRICOS-MUJER.jpg"
+          },
+          {
+            "id": 4,
+            "nombreProducto": "Dulce Nocturno",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Aroma dulce y seductor para las noches especiales.",
+            "precio": 39.99,
+            "stock": 25,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/11/PERFUMES-DULCES.jpg"
+          },
+          {
+            "id": 5,
+            "nombreProducto": "Fresco Marino",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Fragancia fresca con notas marinas para un día en la playa.",
+            "precio": 42.99,
+            "stock": 60,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/09/PERFUME-AFRUTADOS-H.jpg"
+          },
+          {
+            "id": 6,
+            "nombreProducto": "Floral Nocturno",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Aroma floral con notas sensuales para la noche.",
+            "precio": 45.99,
+            "stock": 20,
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2elle-perfume-salir-noche-1638796232.jpg"
+          },
+          {
+            "id": 7,
+            "nombreProducto": "Afrutado Energizante",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Fragancia afrutada que te llena de energía.",
+            "precio": 32.99,
+            "stock": 40,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/03/MEJORES-PERF-MUJER.jpg"
+          },
+          {
+            "id": 8,
+            "nombreProducto": "Vainilla Relajante",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Aroma de vainilla que te brinda un momento de relajación.",
+            "precio": 37.99,
+            "stock": 55,
+            "imagen": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/09/17/16318900065285.jpg"
+          },
+          {
+            "id": 9,
+            "nombreProducto": "Oriental Exótico",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Fragancia exótica con notas orientales.",
+            "precio": 47.99,
+            "stock": 15,
+            "imagen": "https://www.lesecretdumarais.com/modules/ph_simpleblog/covers/14.jpg"
+          },
+          {
+            "id": 10,
+            "nombreProducto": "Floral Fresco",
+            "nombreCategoria":"Perfume",
+            "descripcion": "Aroma floral fresco para el día a día.",
+            "precio": 25.99,
+            "stock": 80,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/10/PERFUME-OLOR-COCO.jpg"
+          },
+          {
+            "id": 11,
+            "nombreProducto": "Mascarilla Purificante de Arcilla",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Mascarilla purificante con arcilla natural para una piel limpia y suave.",
+            "precio": 12.99,
+            "stock": 30,
+            "imagen": "https://1.bp.blogspot.com/-c0wsQ2fovEQ/WJuUfpQPGoI/AAAAAAAABuU/sETBt3ecLycwJxJA5bToppM54laLDtOgQCLcB/s1600/Arcillas-puras-Loreal.jpg"
+          },
+          {
+            "id": 12,
+            "nombreProducto": "Serum Reparador de Noche",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Serum reparador de noche para revitalizar la piel mientras duermes.",
+            "precio": 29.99,
+            "stock": 40,
+            "imagen": "https://www.elperiodic.com/archivos/imagenes/noticias/2023/11/30/73f8a314-57e6-7e5e-0169-77797cb0046d_xl.jpg"
+          },
+          {
+            "id": 13,
+            "nombreProducto": "Aceite Corporal de Rosa Mosqueta",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Aceite corporal de rosa mosqueta para una piel nutrida y suave.",
+            "precio": 15.99,
+            "stock": 25,
+            "imagen": "https://www.bizislow.com/wp-content/uploads/2020/09/aceite-vegetal-rosa-mosqueta-virgen-tepernic-6.jpg"
+          },
+          {
+            "id": 14,
+            "nombreProducto": "Loción Corporal Hidratante",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Loción corporal hidratante para una piel suave y sedosa todo el día.",
+            "precio": 17.99,
+            "stock": 35,
+            "imagen": "https://m.media-amazon.com/images/I/41zb4ifx5GL.jpg"
+          },
+          {
+            "id": 15,
+            "nombreProducto": "Crema de Ojos Antiarrugas",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Crema de ojos antiarrugas para una mirada más joven y luminosa.",
+            "precio": 24.99,
+            "stock": 20,
+            "imagen": "https://m.media-amazon.com/images/I/41Glo0pjK8L.jpg"
+          },
+          {
+            "id": 16,
+            "nombreProducto": "Exfoliante Facial de Café",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Exfoliante facial de café para una piel suave y radiante.",
+            "precio": 10.99,
+            "stock": 45,
+            "imagen": "https://theorganikformula.cl/cdn/shop/products/Exfoliante_facial_cafe_cosmetica_natural_vegana_theorganikformula_1-1-scaled_1200x.jpg?v=1619725628"
+          },
+          {
+            "id": 17,
+            "nombreProducto": "Bálsamo Labial Hidratante",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Bálsamo labial hidratante para unos labios suaves y protegidos.",
+            "precio": 7.99,
+            "stock": 60,
+            "imagen": "https://m.media-amazon.com/images/I/51hXxbFPaHL.jpg"
+          },
+          {
+            "id": 18,
+            "nombreProducto": "Gel Limpiador Facial",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Gel limpiador facial para una piel limpia y fresca.",
+            "precio": 14.99,
+            "stock": 55,
+            "imagen": "https://m.media-amazon.com/images/I/51doEjSgqWL.jpg"
+          },
+          {
+            "id": 19,
+            "nombreProducto": "Tónico Facial Refrescante",
+            "nombreCategoria":"Cosmetica",
+            "descripcion": "Tónico facial refrescante para tonificar la piel después de la limpieza.",
+            "precio": 11.99,
+            "stock": 70,
+            "imagen": "https://m.media-amazon.com/images/I/51RRYjmSRmL.jpg"
+          },
+          {
+            "id": 20,
+            "nombreProducto": "Base de maquillaje HD",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Base de maquillaje de alta definición para una piel perfecta en fotografías y eventos.",
+            "precio": 29.99,
+            "stock": 50,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/07/BASE-MAQ.jpg"
+          },
+          {
+            "id": 22,
+            "nombreProducto": "Paleta de sombras neutras",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Paleta de sombras de ojos con tonos neutros para crear looks versátiles.",
+            "precio": 19.99,
+            "stock": 40,
+            "imagen": "https://cdn0.bodas.net/article/0853/original/1280/jpg/83580-paletas-de-sombras-de-ojos-naked-urban-decay.jpeg"
+          },
+          {
+            "id": 23,
+            "nombreProducto": "Rubor en crema",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Rubor en crema de larga duración para un aspecto natural y radiante.",
+            "precio": 14.99,
+            "stock": 30,
+            "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/07/COLORETES-CREMA.jpg"
+          },
+          {
+            "id": 24,
+            "nombreProducto": "Lápiz labial mate",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Lápiz labial de acabado mate en una amplia gama de colores intensos.",
+            "precio": 12.99,
+            "stock": 60,
+            "imagen": "https://m.media-amazon.com/images/I/51t46H-9V5L.jpg"
+          },
+          {
+            "id": 25,
+            "nombreProducto": "Máscara de pestañas voluminizadora",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Máscara de pestañas que proporciona volumen y longitud sin grumos.",
+            "precio": 9.99,
+            "stock": 70,
+            "imagen": "https://cdn0.bodas.net/article/9691/original/1280/jpg/71969-1.jpeg"
+          },
+          {
+            "id": 26,
+            "nombreProducto": "Delineador líquido",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Delineador líquido de larga duración para crear líneas precisas y definidas.",
+            "precio": 8.99,
+            "stock": 45,
+            "imagen": "https://www.ohlalabeautybar.com/wp-content/uploads/2021/02/AM-Maquillaje-Delineador-Liquido-1200x800-1.webp"
+          },
+          {
+            "id": 27,
+            "nombreProducto": "Corrector de ojeras",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Corrector de ojeras de alta cobertura para ocultar imperfecciones y revitalizar el contorno de ojos.",
+            "precio": 11.99,
+            "stock": 55,
+            "imagen": "https://escuelademaquillajemadrid.com/wp-content/uploads/2023/02/corrector-para-ojeras-moradas.jpg"
+          },
+          {
+            "id": 28,
+            "nombreProducto": "Iluminador en polvo",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Iluminador en polvo para resaltar los puntos altos del rostro y obtener un brillo radiante.",
+            "precio": 16.99,
+            "stock": 25,
+            "imagen": "https://m.media-amazon.com/images/I/613+C2ETHGL.jpg"
+          },
+          {
+            "id": 29,
+            "nombreProducto": "Primer facial",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Primer facial para preparar la piel antes del maquillaje y prolongar su duración.",
+            "precio": 21.99,
+            "stock": 35,
+            "imagen": "https://m.media-amazon.com/images/I/51ydet-4z6L.jpg"
+          },
+          {
+            "id": 30,
+            "nombreProducto": "Fijador de maquillaje",
+            "nombreCategoria":"Maquillaje",
+            "descripcion": "Spray fijador de maquillaje que ayuda a mantener el maquillaje intacto por más tiempo.",
+            "precio": 18.99,
+            "stock": 20,
+            "imagen": "https://www.raquelcosmetics.com/assets/productimages/CO-BL743.jpg"
+          },
+          {
+            "id": 31,
+            "nombreProducto": "Acondicionador hidratante",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Acondicionador que proporciona hidratación profunda para cabello seco y quebradizo.",
+            "precio": 10.99,
+            "stock": 40,
+            "imagen": "https://m.media-amazon.com/images/I/41foo+lt0wL.jpg"
+          },
+          {
+            "id": 32,
+            "nombreProducto": "Mascarilla nutritiva",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Mascarilla capilar que nutre en profundidad y revitaliza el cabello sin vida.",
+            "precio": 15.99,
+            "stock": 30,
+            "imagen": "https://m.media-amazon.com/images/I/51IId8KuqML.jpg"
+          },
+          {
+            "id": 33,
+            "nombreProducto": "Aceite reparador de puntas",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Aceite capilar que repara las puntas abiertas y proporciona brillo y suavidad.",
+            "precio": 9.99,
+            "stock": 60,
+            "imagen": "https://m.media-amazon.com/images/I/31PA+zoPJfL.jpg"
+          },
+          {
+            "id": 34,
+            "nombreProducto": "Espuma voluminizadora",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Espuma para el cabello que proporciona volumen y fijación sin apelmazar.",
+            "precio": 8.99,
+            "stock": 70,
+            "imagen": "https://m.media-amazon.com/images/I/411w8gNsmPL.jpg"
+          },
+          {
+            "id": 35,
+            "nombreProducto": "Spray de protección térmica",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Spray que protege el cabello del calor de secadores y planchas.",
+            "precio": 11.99,
+            "stock": 45,
+            "imagen": "https://m.media-amazon.com/images/I/41QW0EMG1QL.jpg"
+          },
+          {
+            "id": 36,
+            "nombreProducto": "Cera moldeadora",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Cera capilar para definir y moldear peinados con un acabado natural.",
+            "precio": 7.99,
+            "stock": 55,
+            "imagen": "https://m.media-amazon.com/images/I/51EgSdjYIoL.jpg"
+          },
+          {
+            "id": 37,
+            "nombreProducto": "Serum reparador de puntas",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Serum que repara las puntas abiertas y previene su aparición.",
+            "precio": 14.99,
+            "stock": 25,
+            "imagen": "https://m.media-amazon.com/images/I/41l0gyZjOOL.jpg"
+          },
+          {
+            "id": 38,
+            "nombreProducto": "Gel de peinado",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Gel para peinar que proporciona fijación duradera y control del cabello.",
+            "precio": 6.99,
+            "stock": 35,
+            "imagen": "https://www.joico.lat/wp-content/uploads/2019/01/joi-gel-medium-styled.jpg"
+          },
+          {
+            "id": 39,
+            "nombreProducto": "Champú matizador",
+            "nombreCategoria":"Cabello",
+            "descripcion": "Champú matizador para cabellos teñidos que neutraliza los tonos amarillos y anaranjados.",
+            "precio": 13.99,
+            "stock": 20,
+            "imagen": "https://m.media-amazon.com/images/I/419UEbrf1nL.jpg"
+          },
+          {
+            "id": 40,
+            "nombreProducto": "Protector solar SPF 50+",
+            "nombreCategoria":"Solar",
+            "descripcion": "Protector solar de amplio espectro con SPF 50+, resistente al agua y de rápida absorción.",
+            "precio": 15.99,
+            "stock": 50,
+            "imagen": "https://media.vogue.es/photos/628cb5a4da47804ef0ba8a0a/3:2/w_1200,h_800,c_limit/lrp_sksu_anthelios_uvmune_sweat%20resistance_image_no-cta.jpg"
+          },
+          {
+            "id": 41,
+            "nombreProducto": "Protector solar facial matificante",
+            "nombreCategoria":"Solar",
+            "descripcion": "Protector solar facial con acabado matificante, ideal para pieles mixtas o grasas.",
+            "precio": 12.99,
+            "stock": 40,
+            "imagen": "https://m.media-amazon.com/images/I/41DrKYzgDQL.jpg"
+          },
+          {
+            "id": 42,
+            "nombreProducto": "Aceite bronceador SPF 30",
+            "nombreCategoria":"Solar",
+            "descripcion": "Aceite bronceador enriquecido con SPF 30 para obtener un bronceado dorado y protegido.",
+            "precio": 14.99,
+            "stock": 30,
+            "imagen": "https://m.media-amazon.com/images/I/61PiKUqjruL.jpg"
+          },
+          {
+            "id": 43,
+            "nombreProducto": "Protector solar infantil SPF 50",
+            "nombreCategoria":"Solar",
+            "descripcion": "Protector solar especialmente formulado para la delicada piel de los niños, con SPF 50+.",
+            "precio": 18.99,
+            "stock": 60,
+            "imagen": "https://m.media-amazon.com/images/I/51-5-3PJfHL.jpg"
+          },
+          {
+            "id": 44,
+            "nombreProducto": "Protector solar facial antioxidante",
+            "nombreCategoria":"Solar",
+            "descripcion": "Protector solar facial con antioxidantes que protegen la piel contra el daño causado por los radicales libres.",
+            "precio": 16.99,
+            "stock": 70,
+            "imagen": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/07/05/16570211669247.jpg"
+          },
+          {
+            "id": 45,
+            "nombreProducto": "Gel after sun refrescante",
+            "nombreCategoria":"Solar",
+            "descripcion": "Gel after sun que calma, refresca e hidrata la piel después de la exposición solar.",
+            "precio": 9.99,
+            "stock": 45,
+            "imagen": "https://m.media-amazon.com/images/I/51IUv5Neu5L.jpg"
+          },
+          {
+            "id": 46,
+            "nombreProducto": "Protector solar spray resistente al agua",
+            "nombreCategoria":"Solar",
+            "descripcion": "Protector solar en spray resistente al agua y de rápida absorción, ideal para actividades al aire libre.",
+            "precio": 17.99,
+            "stock": 55,
+            "imagen": "https://phantom-elmundo.unidadeditorial.es/5b34153284cc5c688b7b8fbea0691de9/resize/1200/f/webp/assets/multimedia/imagenes/2020/07/16/15949109413541.jpg"
+          },
+          {
+            "id": 47,
+            "nombreProducto": "Protector solar facial hidratante",
+            "nombreCategoria":"Solar",
+            "descripcion": "Protector solar facial con fórmula hidratante que deja la piel suave y protegida.",
+            "precio": 13.99,
+            "stock": 25,
+            "imagen": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/07/05/16570211660334.jpg"
+          },
+          {
+            "id": 48,
+            "nombreProducto": "Stick labial protector SPF 30",
+            "nombreCategoria":"Solar",
+            "descripcion": "Stick labial con protección solar SPF 30 para proteger los labios de la exposición solar.",
+            "precio": 6.99,
+            "stock": 35,
+            "imagen": "https://m.media-amazon.com/images/I/51oQcF0qGlL.jpg"
+          },
+          {
+            "id": 49,
+            "nombreProducto": "Protector solar en gel para piel grasa",
+            "nombreCategoria":"Solar",
+            "descripcion": "Protector solar en gel de textura ligera especialmente formulado para pieles grasas o con tendencia acneica.",
+            "precio": 19.99,
+            "stock": 20,
+            "imagen": "https://m.media-amazon.com/images/I/51lFj8CGPoL.jpg"
+          },
+          {
+            "id": 50,
+            "nombreProducto": "Suplemento de Omega-3",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Suplemento alimenticio de aceite de pescado omega-3, beneficioso para la salud cardiovascular y cerebral.",
+            "precio": 19.99,
+            "stock": 50,
+            "imagen": "https://m.media-amazon.com/images/I/51PslRN-hCL.jpg"
+          },
+          {
+            "id": 51,
+            "nombreProducto": "Vitaminas para el cabello y uñas",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Complemento vitamínico con biotina y otras vitaminas y minerales para fortalecer el cabello y las uñas.",
+            "precio": 15.99,
+            "stock": 40,
+            "imagen": "https://lafarmacianatural.net/871-thickbox_default/biotina-5000mcg-90cap.jpg"
+          },
+          {
+            "id": 52,
+            "nombreProducto": "Crema hidratante corporal",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Crema hidratante de rápida absorción para mantener la piel suave y nutrida durante todo el día.",
+            "precio": 12.99,
+            "stock": 30,
+            "imagen": "https://m.media-amazon.com/images/I/41ZX7P4sCAL.jpg"
+          },
+          {
+            "id": 53,
+            "nombreProducto": "Gel de árnica",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Gel de árnica con propiedades antiinflamatorias y analgésicas, ideal para aliviar golpes y contusiones.",
+            "precio": 8.99,
+            "stock": 60,
+            "imagen": "https://i.pinimg.com/originals/19/c4/92/19c492da69919fb69915b5aa6375dfc9.jpg"
+          },
+          {
+            "id": 54,
+            "nombreProducto": "Pastillas para el dolor de cabeza",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Pastillas analgésicas para el alivio del dolor de cabeza, migrañas y dolores musculares.",
+            "precio": 9.99,
+            "stock": 70,
+            "imagen": "https://phantom-elmundo.unidadeditorial.es/7671daeaa5050ccb4dd258ab42ea9d3d/resize/1200/f/jpg/assets/multimedia/imagenes/2022/01/19/16425892140700.jpg"
+          },
+          {
+            "id": 55,
+            "nombreProducto": "Antiséptico en spray",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Spray antiséptico para desinfectar pequeñas heridas y cortes, previniendo infecciones.",
+            "precio": 7.99,
+            "stock": 45,
+            "imagen": "https://m.media-amazon.com/images/I/515SbRmB3FL.jpg"
+          },
+          {
+            "id": 56,
+            "nombreProducto": "Cepillo de dientes eléctrico",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Cepillo de dientes eléctrico con tecnología de limpieza avanzada para una higiene bucal óptima.",
+            "precio": 29.99,
+            "stock": 55,
+            "imagen": "https://grupojoly.newmallmedia.com/wp-content/uploads/2023/05/Fotos-flash-1200-x-800-2023-05-24T104359.293.jpg"
+          },
+          {
+            "id": 57,
+            "nombreProducto": "Parches de hidrogel para contorno de ojos",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Parches refrescantes de hidrogel para reducir bolsas y ojeras y revitalizar la zona del contorno de ojos.",
+            "precio": 14.99,
+            "stock": 25,
+            "imagen": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/04/14/16183979172292.jpg"
+          },
+          {
+            "id": 58,
+            "nombreProducto": "Crema antiestrías",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Crema formulada para prevenir y reducir la apariencia de estrías en abdomen, muslos y glúteos.",
+            "precio": 18.99,
+            "stock": 35,
+            "imagen": "https://www.economiadigital.es/wp-content/uploads/2021/08/71RosgINX8S._AC_SL1500_-2.jpg"
+          },
+          {
+            "id": 59,
+            "nombreProducto": "Desodorante sin aluminio",
+            "nombreCategoria":"Parafarmacia",
+            "descripcion": "Desodorante sin sales de aluminio, con ingredientes naturales y aroma fresco y duradero.",
+            "precio": 11.99,
+            "stock": 20,
+            "imagen": "https://m.media-amazon.com/images/I/41jxPkTJgOL.jpg"
+          }
+        
+    ]
+}

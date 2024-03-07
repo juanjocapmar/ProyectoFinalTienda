@@ -1,0 +1,79 @@
+#titulo-cesta {
+    margin:1em;
+    color:#621C57;
+}
+
+.table thead {
+    background-color: #EADFE8;
+}
+
+.table tbody {
+    background-color: #EADFE8;
+}
+
+.boton-cesta {
+    background-color: #0FA761;
+    border:none;
+    font-weight:700;
+    font-size: large;
+}
+.boton-cesta:hover {
+    background-color: #07894c;
+    border:none;
+    font-weight:700;
+    font-size: large;
+}
+
+
+.titulo-pago {
+    color:#410a39;
+    margin:0.5em;
+}
+
+/*Estilo direcciones */
+.titulo-direccion {
+    color:#410a39;
+    margin:0.5em;
+}
+
+.direcciones button {
+    background-color: #07894c;
+    border:none;
+    font-weight:700;
+    height: 100%;
+    font-size: large;
+    color:white;
+}
+.direcciones button:hover {
+    background-color: #055831;
+    border:none;
+    font-weight:700;
+    height: 100%;
+    font-size: large;
+    color:white;
+}
+.direcciones a {
+    background-color: #07894c;
+    border:none;
+    font-weight:700;
+    height: 100%;
+    font-size: large;
+}
+
+
+
+#boton-direccion {
+    background-color: #07894c;
+    border:none;
+    font-weight:700;
+    height: 100%;
+    font-size: large;
+}
+
+#boton-direccion:hover {
+    background-color: #00572f;
+    border:none;
+    font-weight:700;
+    height: 100%;
+    font-size: large;
+}

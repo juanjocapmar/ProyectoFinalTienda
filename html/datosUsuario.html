@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-content.css">
+    <link rel="stylesheet" href="../css/style-comprar.css">
+    <title>Tienda online</title>
+</head>
+<div>
+    <nav class="navbar bg-body-tertiary bg-white">
+      <div class="container">
+          <div class="d-flex w-100">
+              <a class="navbar-brand" href="index.html">
+                  <img class="logo-principal" src="../assets/images/logo-principal.PNG" />
+              </a>
+              
+              <div class="input-group mb-3 my-auto">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">
+                    <svg class="icons-search" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M783.522-110.913 529.848-364.587q-29.761 23.044-68.642 36.565-38.88 13.522-83.119 13.522-111.152 0-188.326-77.174Q112.587-468.848 112.587-580q0-111.152 77.174-188.326Q266.935-845.5 378.087-845.5q111.152 0 188.326 77.174Q643.587-691.152 643.587-580q0 44.478-13.522 83.12-13.521 38.641-36.565 68.163l253.913 254.152-63.891 63.652ZM378.087-405.5q72.848 0 123.674-50.826Q552.587-507.152 552.587-580q0-72.848-50.826-123.674Q450.935-754.5 378.087-754.5q-72.848 0-123.674 50.826Q203.587-652.848 203.587-580q0 72.848 50.826 123.674Q305.239-405.5 378.087-405.5Z"/>
+                    </svg>
+                  </button>
+                </div>
+                <input type="text" id="input-buscador" class="form-control" placeholder="Buscar" aria-label="" aria-describedby="basic-addon1">
+              </div>
+              
+              
+              <div class="d-flex justify-content-around form-user my-auto mx-3">  
+                <a href="login.html" class="icons-user" >
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M222.957-257.63q62.76-43.522 124.521-66.783 61.761-23.261 132.626-23.261 70.865 0 133.242 23.445 62.376 23.444 124.697 66.599 43.522-54.24 61.663-108.153Q817.848-419.697 817.848-480q0-143.863-96.98-240.856-96.98-96.992-240.826-96.992t-240.868 96.992Q142.152-623.863 142.152-480q0 60.283 18.528 114.139 18.529 53.856 62.277 108.231Zm256.857-190.696q-58.569 0-98.409-40.045-39.84-40.044-39.84-98.456 0-58.412 40.026-98.39 40.026-39.979 98.595-39.979 58.569 0 98.409 40.165 39.84 40.164 39.84 98.576 0 58.412-40.026 98.27-40.026 39.859-98.595 39.859Zm.514 374.304q-83.524 0-157.573-31.928t-129.46-87.333q-55.41-55.406-87.342-129.234-31.931-73.828-31.931-157.769 0-83.671 31.978-157.366 31.978-73.696 87.315-129.033 55.337-55.337 129.177-87.435 73.839-32.098 157.794-32.098 83.671 0 157.366 32.098 73.696 32.098 129.033 87.435 55.337 55.337 87.435 129.085 32.098 73.747 32.098 157.272 0 83.524-32.098 157.6t-87.435 129.413Q711.348-137.978 637.6-106q-73.747 31.978-157.272 31.978Zm-.328-68.13q54.283 0 105.587-15.522t102.304-54.804q-51.239-35.761-102.804-54.163Q533.522-285.043 480-285.043q-53.522 0-104.967 18.402-51.446 18.402-102.685 54.163 51 39.282 102.185 54.804Q425.717-142.152 480-142.152Zm0-369.044q33.251 0 54.408-21.021 21.157-21.022 21.157-54.424t-21.157-54.544Q513.251-662.326 480-662.326q-33.251 0-54.408 21.141-21.157 21.142-21.157 54.544t21.157 54.424q21.157 21.021 54.408 21.021Zm0-75.565Zm.239 373.283Z"/></svg>
+                </a>
+                <div class="dropdown">
+                  <button class="icons-buy position-relative" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M286.788-78.37Q257-78.37 236-99.582q-21-21.212-21-51t21.212-50.788q21.213-21 51-21 29.788 0 50.788 21.213 21 21.212 21 51 0 29.787-21.212 50.788-21.213 21-51 21Zm400 0Q657-78.37 636-99.582q-21-21.212-21-51t21.212-50.788q21.213-21 51-21 29.788 0 50.788 21.213 21 21.212 21 51 0 29.787-21.212 50.788-21.213 21-51 21Zm-447.244-660L345.478-518.5h287.283l120.217-219.87H239.544Zm-32.87-65.26h582.139q26.123 0 39.753 23.63 13.63 23.63.195 47.5L697.826-496.435q-11.478 19.478-29.504 31.457Q650.297-453 628.402-453H327.109l-54.326 101.37H761.63v65.26H277q-43.913 0-63.13-29.434-19.218-29.435.739-65.631L277.891-498 127.326-817.37H48.37v-65.26h121.304l37 79ZM345.478-518.5h287.283-287.283Z"/>  
+                    </svg>
+                      <span id="icono-cantidad-productos" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                      </span>  
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <div id="lista-productos">
+                      
+                    </div>
+                    <span class="border-bottom"></span>
+                    <div class="d-grid gap-2 m-auto">
+                      <a href="cesta.html" id="boton-cesta">Mostrar cesta</a>
+                    </div>
+                  </ul>
+                </div>
+          </div>
+      </div>
+  </nav>
+
+    <!-- PRODUCTOS CATEGORIAS -->
+
+    <div id="bar-nav1" class="d-flex justify-content-center bar-nav">
+      <!--<a id="bar-elem" class="bar-elem icono-flecha py-2" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+        Perfume
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+      </a>-->
+    </div>
+
+      <!--<div id="bar-nav" class="d-flex justify-content-center bar-nav">
+          <a id="bar-elem" class="bar-elem icono-flecha py-2" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            Perfume
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-elem" href="contenido.html">Action</a></li>
+            <li><a class="dropdown-elem" href="contenido.html">Another action</a></li>
+            <li><a class="dropdown-elem" href="contenido.html">Something else here</a></li>
+          </ul>
+      </div>-->
+
+    
+                          <!-- onsubmit="return validacion()" -->
+      <div class="container">  
+        <form method="GET" action="" id="form-component" onsubmit="return validacion()" >
+          <div id="mensaje-error"></div>
+          <div class="d-flex flex-column form-component px-2">
+            <label for="direccion">Nombre de la dirección *</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Dirección" >
+          </div>
+          <div class="d-flex justify-content-around form-component">
+            <div class="w-75 px-2">
+              <label for="nombre-direccion">Dirección *</label>
+              <input class="w-100" type="text" id="nombre-direccion" name="nombre-direccion" placeholder="Nombre dirección">
+            </div>
+            <div class="w-25">
+              <label for="nombre-direccion">Número *</label>
+              <input class="w-100" type="number" id="numero-direccion" name="numero-direccion" placeholder="Número">
+            </div>
+          </div>
+          <div class="d-flex justify-content-around form-component">
+            <div id="aviso-error">
+            </div>
+            <div class="w-50 px-2">
+              <label for="nombre-usuario">Nombre *</label>
+              <input class="w-100" type="text" id="nombre-usuario" name="nombre-usuario" placeholder="Nombre">
+            </div>
+            <div class="w-50">
+              <label for="apellido-usuario">Apellidos *</label>
+              <input class="w-100" type="text" id="apellido-usuario" name="apellido-usuario" placeholder="Apellido" > 
+            </div>
+          </div>
+          <div class="d-flex justify-content-around form-component">
+            <div class="w-50 px-2">
+              <label for="telefono-usuario">Télefono *</label>
+              <input class="w-100" type="number" id="telefono-usuario" name="telefono-usuario" placeholder="Telefono">
+            </div>
+            <div class="w-50">
+              <label for="email-usuario">Email *</label>
+              <input class="w-100" type="email" id="email-usuario" name="email-usuario" placeholder="Email"> 
+            </div>
+          </div>
+          <div class="d-flex flex-column form-component">
+            <div class="w-100 px-2">
+              <label for="pais">País *</label>
+              <select class="form-select" id="pais" name="pais" aria-label="Default select example">
+                <option value="Afganistán">Afganistán</option>
+                <option value="Albania">Albania</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua y Barbuda">Antigua y Barbuda</option>
+                <option value="Arabia Saudita">Arabia Saudita</option>
+                <option value="Argelia">Argelia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaiyán">Azerbaiyán</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bangladés">Bangladés</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Baréin">Baréin</option>
+                <option value="Bélgica">Bélgica</option>
+                <option value="Belice">Belice</option>
+                <option value="Benín">Benín</option>
+                <option value="Bielorrusia">Bielorrusia</option>
+                <option value="Birmania/Myanmar">Birmania/Myanmar</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia y Herzegovina">Bosnia y Herzegovina</option>
+                <option value="Botsuana">Botsuana</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Brunéi">Brunéi</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Bután">Bután</option>
+                <option value="Cabo Verde">Cabo Verde</option>
+                <option value="Camboya">Camboya</option>
+                <option value="Camerún">Camerún</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Catar">Catar</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Chipre">Chipre</option>
+                <option value="Ciudad del Vaticano">Ciudad del Vaticano</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoras">Comoras</option>
+                <option value="Corea del Norte">Corea del Norte</option>
+                <option value="Corea del Sur">Corea del Sur</option>
+                <option value="Costa de Marfil">Costa de Marfil</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croacia">Croacia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Dinamarca">Dinamarca</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egipto">Egipto</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Eslovaquia">Eslovaquia</option>
+                <option value="Eslovenia">Eslovenia</option>
+                <option selected value="España">España</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Etiopía">Etiopía</option>
+                <option value="Filipinas">Filipinas</option>
+                <option value="Finlandia">Finlandia</option>
+                <option value="Fiyi">Fiyi</option>
+                <option value="Francia">Francia</option>
+                <option value="Gabón">Gabón</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Granada">Granada</option>
+                <option value="Grecia">Grecia</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea ecuatorial">Guinea ecuatorial</option>
+                <option value="Guinea-Bisáu">Guinea-Bisáu</option>
+                <option value="Haití">Haití</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hungría">Hungría</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Irak">Irak</option>
+                <option value="Irán">Irán</option>
+                <option value="Irlanda">Irlanda</option>
+                <option value="Islandia">Islandia</option>
+                <option value="Islas Marshall">Islas Marshall</option>
+                <option value="Islas Salomón">Islas Salomón</option>
+                <option value="Israel">Israel</option>
+                <option value="Italia">Italia</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japón">Japón</option>
+                <option value="Jordania">Jordania</option>
+                <option value="Kazajistán">Kazajistán</option>
+                <option value="Kenia">Kenia</option>
+                <option value="Kirguistán">Kirguistán</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Laos">Laos</option>
+                <option value="Lesoto">Lesoto</option>
+                <option value="Letonia">Letonia</option>
+                <option value="Líbano">Líbano</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libia">Libia</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lituania">Lituania</option>
+                <option value="Luxemburgo">Luxemburgo</option>
+                <option value="Macedonia del Norte">Macedonia del Norte</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malasia">Malasia</option>
+                <option value="Malaui">Malaui</option>
+                <option value="Maldivas">Maldivas</option>
+                <option value="Malí">Malí</option>
+                <option value="Malta">Malta</option>
+                <option value="Marruecos">Marruecos</option>
+                <option value="Mauricio">Mauricio</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="México">México</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldavia">Moldavia</option>
+                <option value="Mónaco">Mónaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Níger">Níger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Noruega">Noruega</option>
+                <option value="Nueva Zelanda">Nueva Zelanda</option>
+                <option value="Omán">Omán</option>
+                <option value="Países Bajos">Países Bajos</option>
+                <option value="Pakistán">Pakistán</option>
+                <option value="Palaos">Palaos</option>
+                <option value="Panamá">Panamá</option>
+                <option value="Papúa Nueva Guinea">Papúa Nueva Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="Polonia">Polonia</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="República Centroafricana">República Centroafricana</option>
+                <option value="República Checa">República Checa</option>
+                <option value="República del Congo">República del Congo</option>
+                <option value="República Democrática del Congo">República Democrática del Congo</option>
+                <option value="República Dominicana">República Dominicana</option>
+                <option value="República Sudafricana">República Sudafricana</option>
+                <option value="Ruanda">Ruanda</option>
+                <option value="Rumanía">Rumanía</option>
+                <option value="Rusia">Rusia</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Cristóbal y Nieves">San Cristóbal y Nieves</option>
+                <option value="San Marino">San Marino</option>
+                <option value="San Vicente y las Granadinas">San Vicente y las Granadinas</option>
+                <option value="Santa Lucía">Santa Lucía</option>
+                <option value="Santo Tomé y Príncipe">Santo Tomé y Príncipe</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leona">Sierra Leona</option>
+                <option value="Singapur">Singapur</option>
+                <option value="Siria">Siria</option>
+                <option value="Somalia">Somalia</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Suazilandia">Suazilandia</option>
+                <option value="Sudán">Sudán</option>
+                <option value="Sudán del Sur">Sudán del Sur</option>
+                <option value="Suecia">Suecia</option>
+                <option value="Suiza">Suiza</option>
+                <option value="Surinam">Surinam</option>
+                <option value="Tailandia">Tailandia</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Tayikistán">Tayikistán</option>
+                <option value="Timor Oriental">Timor Oriental</option>
+                <option value="Togo">Togo</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad y Tobago">Trinidad y Tobago</option>
+                <option value="Túnez">Túnez</option>
+                <option value="Turkmenistán">Turkmenistán</option>
+                <option value="Turquía">Turquía</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Ucrania">Ucrania</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistán">Uzbekistán</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Yibuti">Yibuti</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabue">Zimbabue</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around form-component">
+            <div class="w-75 px-2">
+              <label for="ciudad-direccion">Ciudad *</label>
+              <input class="w-100" type="text" id="ciudad-direccion" name="ciudad-direccion" placeholder="Ciudad" >
+            </div>
+            <div class="w-25 ">
+              <label for="codigo-postal-direccion">Código postal *</label>
+              <input class="w-100" type="number" id="codigo-postal-direccion" name="codigo-postal-direccion" placeholder="Código">
+            </div>
+          </div>
+          <input type="submit" value="Enviar">
+        </form>
+      </div> 
+                         
+                          
+                        
+
+        
+
+      <div class="container-fluid">
+          <div id="producto-comprar" class="d-flex justify-content-center">
+              <!--<div>
+                <img src="https://us.123rf.com/450wm/natallik/natallik2305/natallik230500982/205162140-s%C3%ADmbolo-de-prueba-prueba-de-palabras-conceptuales-en-cubos-de-madera-hermoso-fondo-azul-concepto.jpg?ver=6">
+              </div>
+              <div>
+              <div class="d-flex flex-column">
+                <h1>Nombre Producto</h1>
+                <p>25.00 € <span>IVA incluido</span></p>
+                </div>
+                <div class="d-flex">
+                  <div class="stock">
+                    EN STOCK
+                  </div>
+                  <div class="button-product d-flex">
+                    <span>UNIDADES</span>
+                    <button>-</button>
+                    <div>0</div>
+                    <button>+</button>
+                  </div>
+                  <div class="boton-favoritos">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                  </div>
+                  <button class="btn btn-primary">Añadir a la cesta</button>
+                </div>-->
+                
+              </div>    
+          </div>
+      </div>
+
+
+       
+      
+      
+     
+      
+      <div class="container-fluid">
+          <footer class="footer-page">
+            <div class="logo-principal-footer d-flex justify-content-center ">
+              <img src="../assets/images/logo-footer.PNG">
+            </div>
+            <div class="separador">
+            </div>
+            <h4 class="fs-5 text-center my-3">Disponible en</h4>
+            <div class="d-flex justify-content-center">
+              <img class="img-download-app-apple mx-3" src="../assets/images/app-store.jpg">
+              <img class="img-download-app-google mx-3" src="../assets/images/google-plat.png">
+            </div>
+            <div class="d-flex justify-content-center my-3 section-footer-link">
+                <div class="section">
+                    <ul class="link-footer">
+                        <h4 class="fs-5">Shop beauty</h4>
+                        <li><a class="footer-element" href="#">La Empresa</a></li>
+                        <li><a class="footer-element" href="#">Condiciones Generales</a></li>
+                        <li><a class="footer-element" href="#">Distribuidor Autorizado</a></li>
+                        <li><a class="footer-element" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <ul class="link-footer">
+                      <h4 class="fs-5" >Solucion de problemas</h4>
+                      <li><a class="footer-element" href="#">Ayuda</a></li>
+                      <li><a class="footer-element" href="#">Envio y entrega</a></li>
+                      <li><a class="footer-element" href="#">Garantiá</a></li>
+                      <li><a class="footer-element" href="#">Devoluciones</a></li>
+                      <li><a class="footer-element" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <ul class="link-footer">
+                      <h4 class="fs-5" >Seguridad</h4>
+                      <li><a class="footer-element" href="#">Certificado SSL</a></li>
+                      <li><a class="footer-element" href="#">Politicas de Cookies</a></li>
+                      <li><a class="footer-element" href="#">Politica de privacidad</a></li>
+                      <li><a class="footer-element" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+                <div class="section">
+                  <ul class="link-footer">
+                    <h4 class="fs-5" >Redes sociales</h4>
+                    <div class="d-flex justify-content-around">
+                      <li><a class="footer-element" href="https://instagram.es"><i class="bi bi-instagram"></i></a></li>
+                      <li><a class="footer-element" href="https://facebook.es"><i class="bi bi-facebook"></i></a></li>
+                      <li><a class="footer-element" href="https://twitter.es"><i class="bi bi-twitter"></i></a></li>
+                      <li><a class="footer-element" href="https://linkedin.es"><i class="bi bi-linkedin"></i></a></li>
+                    </div>
+                  </ul>
+                </div>
+            </div>
+            <h4 class="text-center">Métodos de pago</h4>
+            <div class="d-flex justify-content-center text-center">
+              <img class="img-footer-list m-3" src="../assets/images/paypal.png">
+              <img class="img-footer-list m-3" src="../assets/images/visa.png">
+              
+            </div>
+          </footer>
+        </div>
+    
+    <script src="../js/direccion.js"></script>
+    <script src="../js/cesta.js"></script>
+    <script src="../js/carritoCompra.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <!--<script src="../js/carritoCompra.js"></script>-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

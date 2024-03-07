@@ -1,0 +1,22 @@
+{
+    "categorias": [ 
+        {
+            "nombreCategoria":"Perfume"
+        },
+        {
+            "nombreCategoria": "Cosmetica"
+        },
+        {
+            "nombreCategoria": "Maquillaje"
+        },
+        {
+            "nombreCategoria": "Cabello"
+        },
+        {
+            "nombreCategoria": "Solar"
+        },
+        {
+            "nombreCategoria": "Parafarmacia"
+        }
+    ]
+}
