@@ -8,7 +8,6 @@ function validacion() {
     let direccion = document.getElementById('direccion').value;
 
     if( direccion == null || direccion.length == 0 || /^\s+$/.test(direccion)) {
-        alert('error direcc');
         avisoError = "Has introducido algo de manera incorrecta";
         contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
@@ -17,28 +16,32 @@ function validacion() {
     let nombreDireccion = document.getElementById('nombre-direccion').value;
 
     if (nombreDireccion == null || nombreDireccion.length == 0 || /^\s+$/.test(nombreDireccion)) {
-        alert('error nom dir');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
     let numeroDireccion = document.getElementById('numero-direccion').value;
 
     if (isNaN(numeroDireccion)) {
-        alert('error numer direc');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
     let nombre = document.getElementById('nombre-usuario').value;
 
     if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
-        alert('error nombre');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
     let apellido = document.getElementById('apellido-usuario').value;
 
     if (apellido == null || apellido.length == 0 || /^\s+$/.test(apellido)) {
-        alert('error apellido');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
@@ -46,35 +49,40 @@ function validacion() {
    
 
     if (isNaN(telefono) || telefono.length === 0) {
-        alert('error telefono');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
     let email = document.getElementById('email-usuario').value;
     
     if( !(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(email)) ) {
-        alert('error email');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
     let pais = document.getElementsByName('pais');
     
     if( pais[0].value == null || pais[0].value == 0 ) {
-        alert('error pais');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
     let ciudad = document.getElementById('ciudad-direccion').value;
-    alert(ciudad)
+    
     if (ciudad == null || ciudad.length == 0 || /^\s+$/.test(ciudad)) {
-        alert('error ciudad direc');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 
     let codigoPostal = document.getElementById('codigo-postal-direccion').value;
 
     if(isNaN(codigoPostal)) {
-        alert('error cod postal');
+        avisoError = "Has introducido algo de manera incorrecta";
+        contenedorMensajeError.innerHTML = devolverError(avisoError); 
         formvalido = false;
     }
 

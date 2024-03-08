@@ -4,8 +4,3 @@ const listaProductos = datos;
 
 export { listaProductos };
 
-
-/* fetch('../js/json/productos.json')
-    .then(res => res.json())
-    .then(res => listaProductos(res.productos))
- */

@@ -10,7 +10,7 @@ if (!document.getElementById('entrega-domicilio').checked) {
 
 document.getElementById('entrega-domicilio').addEventListener('click' , evento => {
     if (evento.target.tagName !== 'INPUT') return;
-    
+
     if (evento.target.checked) {
         localStorage.setItem("entrega-domicilio" , evento.target.checked);
     } else {
@@ -18,8 +18,7 @@ document.getElementById('entrega-domicilio').addEventListener('click' , evento =
     }
 });
 
-console.log("array");
-console.log(listaProductosCestaArray);
+
 // Si solo hay un producto no es necesario realizar la suma
 // Precio total de todos los productos de la cesta
 if (listaProductosCestaArray === null) {

@@ -110,6 +110,28 @@
           </div>
 
       </div>
+      <h2 class="my-4 text-center">Deja un comentario</h2>
+      <div id="form-comterarios" class="d-flex flex-column">
+        <div class="form-floating mb-3 w-50 m-auto">
+          <input id="nombre-comentario" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Nombre</label>
+        </div>
+        <div class="form-floating mb-3 w-50 m-auto">
+          <input id="apellido-comentario" type="text" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Apellido</label>
+        </div>
+        <div class="form-floating mb-3 w-50 m-auto">
+          <textarea id="text-comentario" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Comentario</label>
+        </div>
+       
+          <button type="text" id="boton-comentarios" class="btn btn-primary mb-3 w-25 m-auto">Enviar</button>
+       
+      </div>
+      <h2 id="titulo-comentarios" class="my-4 text-center">Listado comentarios</h2>
+      <div id="listado-comentarios" class="d-flex flex-column">
+
+      </div>
 
       
       
@@ -175,10 +197,11 @@
         </footer>
       </div>
         
-        
+    
     <script type="module" src="../js/comprarProducto.js"></script>
     <script type="module" src="../js/index.js"></script>
     <script src="../js/carritoCompra.js"></script>
+    <script type="module" src="../js/comentarios.js"></script>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

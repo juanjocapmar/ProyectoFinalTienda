@@ -6,7 +6,7 @@
       "nombreCategoria": "Perfume",
       "descripcion": "Fragancia fresca y floral perfecta para la primavera.",
       "precio": 35.99,
-      "stock": 47,
+      "stock": 40,
       "ventas": 3,
       "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/09/PERFUME-ROSAS.jpg"
     },
@@ -601,5 +601,41 @@
       "nombreCategoria": "Parafarmacia"
     }
   ],
-  "comentarios": []
+  "comentarios": [
+    {
+      "id": 1,
+      "nombreProducto": "Floral Primavera",
+      "texto": "Producto bueno",
+      "nombre": "Juan Jose",
+      "apellido": "Capel"
+    },
+    {
+      "id": 2,
+      "nombreProducto": "Floral Primavera",
+      "texto": "El mejor producto",
+      "nombre": "Manuel",
+      "apellido": "Perez"
+    },
+    {
+      "id": 3,
+      "nombreProducto": "Serum Reparador de Noche",
+      "texto": "Producto muy bueno",
+      "nombre": "Manolo",
+      "apellido": "Lopéz"
+    },
+    {
+      "id": 4,
+      "nombreProducto": "Serum Reparador de Noche",
+      "texto": "Muy buena calidad",
+      "nombre": "Carlos",
+      "apellido": "Gonzalez"
+    },
+    {
+      "id": 5,
+      "nombreProducto": "Dulce Nocturno",
+      "texto": "Es una muy buena fragancia",
+      "nombre": "Javier",
+      "apellido": "Lopéz"
+    }
+  ]
 }

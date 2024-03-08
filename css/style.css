@@ -285,6 +285,38 @@ body {
 
 /*Estilos de la paginación*/
 #navPaginacion {
-    margin-left:300px;
+    margin-left:400px;
 }
+
+
+/*Estilos comentarios*/
+
+#boton-comentarios {
+    background-color: #621C57;
+    font-weight: 700;
+    font-size: large;
+}
+
+#boton-comentarios:hover {
+    background-color: #7d3973;
+    font-weight: 700;
+    font-size: large;
+}
+
+/*Estilos métodos de pago*/
+
+#boton-metodo-pago {
+    background-color: #02542e;
+    font-weight: 700;
+    border:none;
+}
+
+#boton-metodo-pago:hover {
+    background-color: #07351f;
+    font-weight: 700;
+    border:none;
+}
+
+
+
 
