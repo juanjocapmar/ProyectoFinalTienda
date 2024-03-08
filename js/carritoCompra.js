@@ -11,7 +11,7 @@ const mostrarProductosCarrito = (listaProductos) => {
     const contenedorCestaProductos = document.getElementById('lista-productos');
     
     const listaProductosCesta = listaProductos.map(pro => 
-        `<div class="d-flex">
+     `<div class="d-flex">
             <img src="${pro.imagenProducto}">
             <p id="nombre">${pro.nombreProducto}</p>
         </div>

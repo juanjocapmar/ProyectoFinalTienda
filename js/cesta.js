@@ -22,12 +22,12 @@ console.log("array");
 console.log(listaProductosCestaArray);
 // Si solo hay un producto no es necesario realizar la suma
 // Precio total de todos los productos de la cesta
-if (listaProductosCesta === null) {
+if (listaProductosCestaArray === null) {
     
     mostrarAvisoError();
 
 } else {
-    const sumaPrecioTotal = (listaProductosCesta.length > 1) ? listaProductosCesta.reduce((acumulador , valorProducto) => acumulador + valorProducto.precioTotal , 0) : listaProductosCesta[0].precioTotal;
+    const sumaPrecioTotal = (listaProductosCestaArray.length > 1) ? listaProductosCestaArray.reduce((acumulador , valorProducto) => acumulador + valorProducto.precioTotal , 0) : listaProductosCestaArray[0].precioTotal;
     // Precio total más IVA
     const gastosIVA = sumaPrecioTotal * 0.21;
         
@@ -40,7 +40,7 @@ if (listaProductosCesta === null) {
 
 function mostrarProductosCesta( sumaPrecioTotal ,  sumaPrecioTotalEnvio , gastosIVA ) {
 
-    let mostrarTablaProductosCestas = listaProductosCesta.map(pro => `
+    let mostrarTablaProductosCestas = listaProductosCestaArray.map(pro => `
         <tr>
             <th scope="row">${pro.nombreProducto}</th>
             <td>${pro.numeroProductoComprar}</td>

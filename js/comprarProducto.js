@@ -1,13 +1,16 @@
 import { listaProductos } from "./obtenerProductos.js";
 
 
+
 const productoComprar = (listaProductos) => {
     const contenedorProducto = document.getElementById('producto-comprar');
+    
     const idEnlace = +location.href.split('=')[1];
     
     const productoId = listaProductos.filter(pro =>{
-        return pro.id === idEnlace;
+        return +pro.id === idEnlace;
     });
+    
     
     const mostrarProductoIndividual = productoId.map(pro =>
         `<div>

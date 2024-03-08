@@ -185,39 +185,12 @@ function ordenarPorNombre(listadoProductos) {
 }
 
 function ordenarPorMasVendidos(listadoProductos) {
-    const listaComprasLS = localStorage.getItem("compras");
-    const arrayListaCompraSL = JSON.parse(listaComprasLS);
 
-    let productosMasVendidos = new Map();
+    const productosFiltrados = filtrarCategoria(listadoProductos);
 
-    // Pone el numero de repeticiones de cada compra de un producto
-    for (let i = 0; i < arrayListaCompraSL.length; i ++) {
-        for (let u = 0; u < arrayListaCompraSL[i].listaProductos.length ; u ++) {
-            
-            if (productosMasVendidos.get(arrayListaCompraSL[i].listaProductos[u].nombreProducto) === 1) {
-                let repeticionProducto = productosMasVendidos.get(arrayListaCompraSL[i].listaProductos[u].nombreProducto);
-                productosMasVendidos.set(arrayListaCompraSL[i].listaProductos[u].nombreProducto , repeticionProducto + 1);
-            } else {
-                productosMasVendidos.set(arrayListaCompraSL[i].listaProductos[u].nombreProducto , 1);
-            }
-        }
-    }
+    const productosMasVendidos = productosFiltrados.sort((v1 , v2) => {return v2.ventas - v1.ventas; });
 
-    // Ordena el mapa para obtener los productos más vendidos por el número de ventas
-    const productosMasVendidosOrdenados = new Map( [...productosMasVendidos].sort((x, y) => x[1] + y[1]));
-
-    let productosMasVendidosArray = [];
-
-    // Añade los productos más vendidos en un array
-    for (let [key , value] of productosMasVendidosOrdenados) {
-        for (let o = 0; o < listadoProductos.length; o ++) {
-            if (listadoProductos[o].nombreProducto === key) {
-                productosMasVendidosArray.push(listadoProductos[o]);
-            }
-        }
-    }
-    
-    mostrarProductos(productosMasVendidosArray);
+    mostrarProductos(productosMasVendidos);
 }
 
 
@@ -243,6 +216,42 @@ function filtrarProductosPorBusqueda (texto , listadoProductos , filtroBusqueda)
     mostrarProductos(productosBusqueda);
 
 }
+
+function ordenarPorStock(listaProductos) {
+    const productosFiltrados = filtrarCategoria(listaProductos);
+
+    const productosConStock = productosFiltrados.filter(pro => pro.stock !== 0);
+
+    mostrarProductos(productosConStock);
+}
+
+function ordenarSinStock(listaProductos) {
+    const productosFiltrados = filtrarCategoria(listaProductos);
+
+    const productosSinStock = productosFiltrados.filter(pro => pro.stock === 0);
+
+    mostrarProductos(productosSinStock);
+}
+
+document.getElementById('id-filtro').addEventListener('click' , evento => {
+    
+    if (evento.target.tagName !== 'INPUT') return;
+    
+    const seleccionFiltro = evento.target.dataset.filtro;
+    console.log(seleccionFiltro);
+    if (seleccionFiltro === 'con-stock') {
+        document.getElementById('sin-stock').checked = false; 
+        ordenarPorStock(listaProductos);
+    }
+
+    if (seleccionFiltro === 'sin-stock') {
+        document.getElementById('stock').checked = false;
+        ordenarSinStock(listaProductos);
+    }
+
+});
+
+
 
 // Se prohibe que los dos filtros se seleccionen a la vez
 document.getElementById('filtrosBusqueda').addEventListener('click' , e => {

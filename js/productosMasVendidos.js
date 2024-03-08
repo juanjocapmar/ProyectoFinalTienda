@@ -1,6 +1,34 @@
 import { listaProductos } from './obtenerProductos.js';
 
-const listaComprasLS = localStorage.getItem("compras");
+const contenedorProductosMasVendidos = document.getElementById('mostrar-productos-baratos');
+
+// Recoge los productos más vendidos
+const productosMasVendidos = listaProductos.sort((v1 , v2) => {return v2.ventas - v1.ventas; });
+
+let arrayProductosMostrar = [];
+for (let i = 0; i < 3; i ++) {
+    arrayProductosMostrar.push(productosMasVendidos[i]);
+} 
+
+const mostrarProductosBaratos = arrayProductosMostrar.map(pro => `
+        <div data-cardproducto="" class="col-4 m-2">
+            <a href="verProducto.html?id=${pro.id}" class="card text-center">
+            <img src="${pro.imagen}" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+                <h5 class="card-title">${pro.nombreProducto}</h5>
+                <p class="card-text">${pro.descripcion}</p>
+                <p class="card-price fs-3">${pro.precio} €</p>
+            </div>
+        </a>
+        </div>`).join('');
+
+        contenedorProductosMasVendidos.innerHTML = `<div class="d-flex justify-content-around">`
+        + mostrarProductosBaratos + `</div>`;
+
+
+
+/*const listaComprasLS = localStorage.getItem("compras");
 const arrayListaCompraSL = JSON.parse(listaComprasLS);
 
 let productosMasVendidos = new Map();
@@ -64,5 +92,5 @@ if (productosMasVendidosArray.length === 0) {
 
     contenedorCarrouselProductosBaratos.innerHTML = `<div class="d-flex justify-content-around">`
         + mostrarProductosBaratos + `</div>`;
-}
+}*/
 

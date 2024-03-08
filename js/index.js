@@ -1,5 +1,6 @@
 import {categoria} from './obtenerCategorias.js';
 
+console.log(categoria);
 
 function mostrarCategorias (categoria) {
     const barra = document.getElementById('bar-nav1');

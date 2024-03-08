@@ -221,7 +221,6 @@ function eliminarUsuario(nombreCliente) {
     const nuevaListaEliminar = listaClientes.filter(cli => cli.nombreCliente !== nombreCliente);
 
     localStorage.setItem('clientes' , JSON.stringify(nuevaListaEliminar));
-
 }
 
 

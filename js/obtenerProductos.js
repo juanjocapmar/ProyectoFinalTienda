@@ -1,7 +1,7 @@
-const res = await fetch('../js/json/productos.json');
+const res = await fetch('http://localhost:3000/productos');
 const datos = await res.json();
-const listaProductos = datos.productos;
-console.log(listaProductos);
+const listaProductos = datos;
+
 export { listaProductos };
 
 

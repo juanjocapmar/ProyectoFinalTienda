@@ -1,3 +1,4 @@
+
 // Obtiene el cliente a comprar
 const comprador = localStorage.getItem("cliente-comprar");
 const compradorArray = JSON.parse(comprador);
@@ -68,11 +69,11 @@ const mostrarPrecio = `
     </tr>
     <tr id="gastos-envio">
         <th colspan="3">Gastos de envio 4%</th>
-        <td>${gastosEnvio}</td> 
+        <td>${Math.round(gastosEnvio)}</td> 
     </tr>
     <tr>
         <th colspan="3">Precio total</th>
-        <td>${sumaPrecioTotalEnvio}</td> 
+        <td>${Math.round(sumaPrecioTotalEnvio)}</td> 
     </tr>`;
     
 contenedorGastosEnvio.innerHTML = `<span>${gastosEnvio}</span>`;
@@ -90,7 +91,7 @@ if (formaEnvio === 'false') {
     document.getElementById('gastos-envio').setAttribute('hidden' , '');
 }
 
-document.getElementById('boton-finalizar-compra').addEventListener('click' , e => {
+/*document.getElementById('boton-finalizar-compra').addEventListener('click' , e => {
     let listaCompra = [];
 
     if (localStorage.getItem("compras") === null || JSON.parse(localStorage.getItem("compras")).length === 0) {
@@ -119,9 +120,14 @@ document.getElementById('boton-finalizar-compra').addEventListener('click' , e =
         // Lo añade al localStorage
         localStorage.setItem("compras" , JSON.stringify(arrayListaCompraSL));
     }
+});*/
+
+document.getElementById('boton-finalizar-compra').addEventListener('click' , e => { 
+
+
+
+
 });
-
-
 
 
 
