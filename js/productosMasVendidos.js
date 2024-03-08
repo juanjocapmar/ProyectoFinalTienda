@@ -11,7 +11,7 @@ for (let i = 0; i < 3; i ++) {
 } 
 
 const mostrarProductosBaratos = arrayProductosMostrar.map(pro => `
-        <div data-cardproducto="" class="col-4 m-2">
+        <div id="producto-individual" data-cardproducto="" class="col-4 m-2">
             <a href="verProducto.html?id=${pro.id}" class="card text-center">
             <img src="${pro.imagen}" class="card-img-top" alt="...">
             
@@ -23,7 +23,7 @@ const mostrarProductosBaratos = arrayProductosMostrar.map(pro => `
         </a>
         </div>`).join('');
 
-        contenedorProductosMasVendidos.innerHTML = `<div class="d-flex justify-content-around">`
+        contenedorProductosMasVendidos.innerHTML = `<div id="lista-card-productos" class="d-flex justify-content-around">`
         + mostrarProductosBaratos + `</div>`;
 
 

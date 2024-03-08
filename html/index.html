@@ -12,9 +12,9 @@
     <title>Tienda online</title>
 </head>
 <div>
-  <nav class="navbar bg-body-tertiary bg-white">
-    <div class="container">
-        <div class="d-flex w-100">
+  <nav class="navbar bg-body-tertiary bg-white navbar-static fixed-top p-0">
+    <div class="container-fluid">
+        <div class="d-flex w-100 barra-navegacion">
             <a class="navbar-brand" href="index.html">
                 <img class="logo-principal" src="../assets/images/logo-principal.PNG" />
             </a>
@@ -54,16 +54,20 @@
               </div>
         </div>
     </div>
+    <div id="bar-nav1" class="d-flex justify-content-center w-100 bar-nav navbar-static">
+
+    </div>
 </nav>
+
 
   <!-- PRODUCTOS CATEGORIAS -->
 
-  <div id="bar-nav1" class="d-flex justify-content-center bar-nav">
+  <!--<div id="bar-nav1" class="d-flex justify-content-center bar-nav">-->
     <!--<a id="bar-elem" class="bar-elem icono-flecha py-2" href="#" data-bs-toggle="dropdown" aria-expanded="false">
       Perfume
       <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
     </a>-->
-  </div>
+  <!--</div>-->
       
       <!--<div id="bar-nav" class="d-flex justify-content-center bar-nav">
           <a id="bar-elem" class="bar-elem icono-flecha py-2" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,7 +82,7 @@
       </div>-->
 
       <!-- Contenido promocional -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div id="carouselExampleIndicators" class="carousel slide py-5" data-bs-ride="true">
         <div class="carousel-indicators">
           <button id="boton-carrousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button id="boton-carrousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -108,6 +112,7 @@
       <div class="container">
           <h2 id="titulo-productos-vendidos" class="py-4">Productos más vendidos</h2>
           <div id="mostrar-productos-baratos" class="carousel-inner">
+          
           </div>
       </div>
 

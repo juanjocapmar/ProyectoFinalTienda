@@ -5,6 +5,3 @@ export {categoria};
 
 
 
-/*fetch('../js/json/categorias.json')
-    .then(res => res.json())
-    .then(categoria => mostrarCategorias(categoria.categorias))*/

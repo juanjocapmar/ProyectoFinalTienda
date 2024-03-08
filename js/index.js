@@ -1,6 +1,5 @@
 import {categoria} from './obtenerCategorias.js';
 
-console.log(categoria);
 
 function mostrarCategorias (categoria) {
     const barra = document.getElementById('bar-nav1');
@@ -16,17 +15,5 @@ function mostrarCategorias (categoria) {
 
 mostrarCategorias(categoria);
 
-/*function listarSubcategorias(subCategoria) {
-    const ul = document.createElement('ul');
-    const subCategorias = subCategoria.map(elem => {
-        const a = document.createElement('a');
-        const li = document.createElement('li');
-        ul.className = "dropdown-menu";
-        a.setAttribute("href" , "contenido.html");
-        li.append(a);
-        a.innerHTML = elem;
-        ul.append(li);        
-    });
-    return ul;
-}*/
+
     
