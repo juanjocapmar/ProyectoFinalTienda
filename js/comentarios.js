@@ -1,6 +1,6 @@
 import { comentarios } from "./obtenerComentarios.js";
 
-
+// Muestra los comentarios
 function mostrarComentarios (comentarios) {
     const contenedorListadoComentarios = document.getElementById('listado-comentarios');
     const nombreProducto = document.getElementById('nombre-producto').innerHTML;
@@ -8,7 +8,7 @@ function mostrarComentarios (comentarios) {
     // Filtra los comentarios del producto
     const comentariosFiltrados = comentarios.filter(com => com.nombreProducto === nombreProducto);
 
-    // Aviso de error
+    // Aviso de error si no hay comentarios
     if (comentariosFiltrados.length === 0 || comentariosFiltrados === null) {
         contenedorListadoComentarios.innerHTML = `
         <div class="alert alert-danger w-50 m-auto my-4" role="alert">
@@ -29,7 +29,7 @@ function mostrarComentarios (comentarios) {
 mostrarComentarios(comentarios);
 
 
-
+// Añade un nuevo comentario en el archivo json
 document.getElementById('boton-comentarios').addEventListener('click' , evento => {
     const nombreComentario = document.getElementById('nombre-comentario').value;
     const apellidoComentario = document.getElementById('apellido-comentario').value;
@@ -37,9 +37,11 @@ document.getElementById('boton-comentarios').addEventListener('click' , evento =
     const nombreProducto = document.getElementById('nombre-producto').innerHTML;
     let idComentario = 0;
 
+    // Si no hay ningún comentario el primer id es 1
     if (comentarios.length === 0 || comentarios === null) {
         idComentario = 0;
     } else {
+        // Ontiene el id del ultimo comentario en el archivo json
         idComentario = comentarios[comentarios.length - 1].id; 
     }
     

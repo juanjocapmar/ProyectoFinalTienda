@@ -51,7 +51,9 @@
 
 /*Estilos de el apartado al visualizar un producto*/
 
-
+#producto-comprar {
+    margin-top:120px;
+}
 
 #producto-comprar #imagen-producto {
     width:30em;
@@ -130,6 +132,23 @@
 }
 
 
-
+@media (max-width:700px) {
+    #producto-comprar {
+        margin-top:400px;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #producto-comprar .producto-comprar-individual {
+        width: 100%;
+        margin-left:200px;
+    }
+    #producto-comprar #stock-producto {
+        display:none;
+    }
+    #producto-comprar .boton-favoritos {
+        display:none;
+    }
+ }
 
 

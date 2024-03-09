@@ -4,7 +4,7 @@ const productosCesta = localStorage.getItem("cesta");
 const productosCestaArray = JSON.parse(productosCesta);
 
 let nombreProductosArray = [];
-
+// Introduce en el array los nombre de los productos de la cesta
 for (let producto of productosCestaArray) {
     nombreProductosArray.push(producto.nombreProducto);
 }
@@ -12,7 +12,7 @@ for (let producto of productosCestaArray) {
 document.getElementById('boton-finalizar-compra').addEventListener('click' , evento => {
     
     if (evento.target.tagName !== 'A') return;
-    // Obtiene los productos que se han comprado
+    // Obtiene los productos que se han comprado con el id y todas las propiedades
     const productosModificarVenta = listaProductos.filter(pro => nombreProductosArray.includes(pro.nombreProducto));
     
     // Aumenta el uno el numero de ventas y resta 1 en el archivo json 
@@ -44,10 +44,13 @@ document.getElementById('boton-finalizar-compra').addEventListener('click' , eve
         }
     }
 
-
+    // Modifica la venta de todos los productos de la cesta
     for (let producto of productosModificarVenta) {
         const url = 'http://localhost:3000/productos/' + producto.id;
         modificarVenta (url , producto);
     }
+
+    // Vacia el carrito de la compra al finalizar la compra
+    localStorage.setItem("cesta" , JSON.stringify([]));
     
 });

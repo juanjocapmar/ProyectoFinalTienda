@@ -5,9 +5,12 @@ const compradorArray = JSON.parse(comprador);
 // Obtener los productos de la cesta
 const listaProductos = localStorage.getItem("cesta");
 const listaProductosArray = JSON.parse(listaProductos);
-
+// Obtiene el método de pago seleccionado y si la entrega es a domicilio
 const metodoPago = localStorage.getItem("metodo-pago");
 const formaEnvio = localStorage.getItem("entrega-domicilio");
+// Obtiene el valor del descuento
+const descuentoValor = localStorage.getItem("descuento");
+
 
 const contenedorMenuDireccion = document.getElementById('datos-direccion');
 
@@ -16,8 +19,8 @@ const listaDatosDireccion = compradorArray.map( dir =>
     `<span><strong>Nombre:</strong> ${dir.nombreCliente}</span>
     <span><strong>Apellido:</strong> ${dir.apellidoCliente}</span>
     <span><strong>Dirección:</strong> ${dir.nombreDireccion}</span>
-    <span><strong>Pais:</strong> ${dir.pais}</span>
-    <span><strong>Telefono:</strong> ${dir.telefonoCliente}</span>`
+    <span><strong>País:</strong> ${dir.pais}</span>
+    <span><strong>Teléfono:</strong> ${dir.telefonoCliente}</span>`
 );
 
 contenedorMenuDireccion.innerHTML = listaDatosDireccion;
@@ -37,12 +40,18 @@ let sumaPrecioTotal = (listaProductosArray.length > 1) ? listaProductosArray.red
 let gastosIVA = sumaPrecioTotal * 0.21;
 // Precio total más gastos de envio
 let gastosEnvio = sumaPrecioTotal * 0.04;
-        
+// Precio con gastos de envio
 let sumaPrecioTotalEnvio = Math.round((sumaPrecioTotal + gastosEnvio) + gastosIVA).toFixed(2);
+// Precio con descuento aplicado
+let descuento = Math.round(sumaPrecioTotalEnvio * 0.04);
 
 // Si no es con entrega a domicilio se quitan los gastos de envío
 if (formaEnvio === 'false') {
     sumaPrecioTotalEnvio = Math.round(sumaPrecioTotalEnvio - gastosEnvio);
+}
+// Si se ha seleccionado el descuento se resta del precio original
+if (descuentoValor === 'true') {
+    sumaPrecioTotalEnvio = Math.round(sumaPrecioTotalEnvio - descuento);
 }
 
 
@@ -71,6 +80,10 @@ const mostrarPrecio = `
         <th colspan="3">Gastos de envio 4%</th>
         <td>${Math.round(gastosEnvio)}</td> 
     </tr>
+    <tr id="descuento">
+        <th colspan="3">Descuento del 4%</th>
+        <td>${Math.round("-" + descuento)}</td> 
+    </tr>
     <tr>
         <th colspan="3">Precio total</th>
         <td>${Math.round(sumaPrecioTotalEnvio)}</td> 
@@ -79,6 +92,7 @@ const mostrarPrecio = `
 contenedorGastosEnvio.innerHTML = `<span>${gastosEnvio}</span>`;
 tablaFinalizarCompra.innerHTML = mostrarListaProductos + mostrarPrecio;
 
+// Oculta o muestra si la entrega es a domicilio o no
 if (formaEnvio === 'true') {
     contenedorMenuFormaEnvio.innerHTML = `<span><strong>Entrega a domicilio</strong></span>
                                         <span><strong>Compañia predeterminada</strong></span>`;
@@ -86,48 +100,17 @@ if (formaEnvio === 'true') {
     contenedorMenuFormaEnvio.innerHTML = `<span><strong>Recogida en tienda</strong></span>`;
     contenedorGastosEnvio.innerHTML = '<span><strong>0 €</strong></span>';
 }
-
+// Oculta los gastos de envio de la tabla
 if (formaEnvio === 'false') {
     document.getElementById('gastos-envio').setAttribute('hidden' , '');
 }
-
-/*document.getElementById('boton-finalizar-compra').addEventListener('click' , e => {
-    let listaCompra = [];
-
-    if (localStorage.getItem("compras") === null || JSON.parse(localStorage.getItem("compras")).length === 0) {
-        // Crea un objeto de cada usuario y sus productos
-        let compra = {
-            nombreCliente:compradorArray[0].nombreCliente,
-            listaProductos:arrayProductosCesta
-        }
-
-        // Lo añade al array
-        listaCompra.push(compra);
-        // Lo añade al localStorage
-        localStorage.setItem("compras" , JSON.stringify(listaCompra));
-    } else {
-        const listaComprasLS = localStorage.getItem("compras");
-        const arrayListaCompraSL = JSON.parse(listaComprasLS);
-
-        // Crea un objeto de cada usuario y sus productos
-        let compra = {
-            nombreCliente:compradorArray[0].nombreCliente,
-            listaProductos:arrayProductosCesta
-        }
-
-        // Lo añade al array
-        arrayListaCompraSL.push(compra);
-        // Lo añade al localStorage
-        localStorage.setItem("compras" , JSON.stringify(arrayListaCompraSL));
-    }
-});*/
-
-document.getElementById('boton-finalizar-compra').addEventListener('click' , e => { 
+// Oculta los descuentos de la tabla
+if (descuentoValor === 'false') {
+    document.getElementById('descuento').setAttribute('hidden' , '');
+}
 
 
 
-
-});
 
 
 

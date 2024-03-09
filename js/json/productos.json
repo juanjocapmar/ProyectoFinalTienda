@@ -6,8 +6,8 @@
       "nombreCategoria": "Perfume",
       "descripcion": "Fragancia fresca y floral perfecta para la primavera.",
       "precio": 35.99,
-      "stock": 40,
-      "ventas": 3,
+      "stock": 38,
+      "ventas": 5,
       "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/09/PERFUME-ROSAS.jpg"
     },
     {
@@ -116,8 +116,8 @@
       "nombreCategoria": "Cosmetica",
       "descripcion": "Serum reparador de noche para revitalizar la piel mientras duermes.",
       "precio": 29.99,
-      "stock": 40,
-      "ventas": 0,
+      "stock": 39,
+      "ventas": 1,
       "imagen": "https://www.elperiodic.com/archivos/imagenes/noticias/2023/11/30/73f8a314-57e6-7e5e-0169-77797cb0046d_xl.jpg"
     },
     {
@@ -126,8 +126,8 @@
       "nombreCategoria": "Cosmetica",
       "descripcion": "Aceite corporal de rosa mosqueta para una piel nutrida y suave.",
       "precio": 15.99,
-      "stock": 25,
-      "ventas": 0,
+      "stock": 24,
+      "ventas": 1,
       "imagen": "https://www.bizislow.com/wp-content/uploads/2020/09/aceite-vegetal-rosa-mosqueta-virgen-tepernic-6.jpg"
     },
     {
@@ -196,8 +196,8 @@
       "nombreCategoria": "Maquillaje",
       "descripcion": "Base de maquillaje de alta definición para una piel perfecta en fotografías y eventos.",
       "precio": 29.99,
-      "stock": 50,
-      "ventas": 0,
+      "stock": 49,
+      "ventas": 1,
       "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/07/BASE-MAQ.jpg"
     },
     {
@@ -216,8 +216,8 @@
       "nombreCategoria": "Maquillaje",
       "descripcion": "Rubor en crema de larga duración para un aspecto natural y radiante.",
       "precio": 14.99,
-      "stock": 30,
-      "ventas": 0,
+      "stock": 29,
+      "ventas": 1,
       "imagen": "https://www.primor.eu/blog/wp-content/uploads/2023/07/COLORETES-CREMA.jpg"
     },
     {
@@ -306,8 +306,8 @@
       "nombreCategoria": "Cabello",
       "descripcion": "Mascarilla capilar que nutre en profundidad y revitaliza el cabello sin vida.",
       "precio": 15.99,
-      "stock": 27,
-      "ventas": 3,
+      "stock": 26,
+      "ventas": 4,
       "imagen": "https://m.media-amazon.com/images/I/51IId8KuqML.jpg"
     },
     {
@@ -583,55 +583,61 @@
   ],
   "categorias": [
     {
-      "nombreCategoria": "Perfume"
+      "nombreCategoria": "Perfume",
+      "id": "f041"
     },
     {
-      "nombreCategoria": "Cosmetica"
+      "nombreCategoria": "Cosmetica",
+      "id": "7609"
     },
     {
-      "nombreCategoria": "Maquillaje"
+      "nombreCategoria": "Maquillaje",
+      "id": "003f"
     },
     {
-      "nombreCategoria": "Cabello"
+      "nombreCategoria": "Cabello",
+      "id": "dcba"
     },
     {
-      "nombreCategoria": "Solar"
+      "nombreCategoria": "Solar",
+      "id": "829b"
     },
     {
-      "nombreCategoria": "Parafarmacia"
+      "nombreCategoria": "Parafarmacia",
+      "id": "868b"
     }
   ],
   "comentarios": [
     {
-      "id": 1,
+      "id": "1",
       "nombreProducto": "Floral Primavera",
       "texto": "Producto bueno",
       "nombre": "Juan Jose",
       "apellido": "Capel"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombreProducto": "Floral Primavera",
       "texto": "El mejor producto",
       "nombre": "Manuel",
       "apellido": "Perez"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombreProducto": "Serum Reparador de Noche",
       "texto": "Producto muy bueno",
       "nombre": "Manolo",
       "apellido": "Lopéz"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombreProducto": "Serum Reparador de Noche",
       "texto": "Muy buena calidad",
       "nombre": "Carlos",
       "apellido": "Gonzalez"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombreProducto": "Dulce Nocturno",
       "texto": "Es una muy buena fragancia",
       "nombre": "Javier",

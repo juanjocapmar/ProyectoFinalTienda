@@ -8,6 +8,7 @@ document.getElementById('pagos').addEventListener('click' , evento => {
     localStorage.setItem("metodo-pago" , evento.target.dataset.metodopago);
 });
 
+// Guarda si se ha seleccionado el descuento en el localstorage
 document.getElementById('descuento').addEventListener('click' , evento => {
     if (evento.target.id === 'entrega-domicilio') return;
     if (evento.target.id !== 'descuento') return;

@@ -1,6 +1,6 @@
 import {categoria} from './obtenerCategorias.js';
 
-
+// Muestra las categorias en la barra principal de navegación
 function mostrarCategorias (categoria) {
     const barra = document.getElementById('bar-nav1');
     const categoriaPrincipal = categoria.map(categoria => {

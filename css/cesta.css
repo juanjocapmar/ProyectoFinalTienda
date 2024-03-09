@@ -1,5 +1,5 @@
 #titulo-cesta {
-    margin:1em;
+    margin-top: 130px;
     color:#621C57;
 }
 
@@ -105,6 +105,9 @@
 /*Estilo direcciones */
 .titulo-direccion {
     color:#410a39;
+    margin-top:130px;
+}
+.titulo-direccion-contenedor {
     margin:0.5em;
 }
 
@@ -148,6 +151,24 @@
     font-weight:700;
     height: 100%;
     font-size: large;
+}
+#pagos {
+    margin-top:200px;
+}
+.titulo-finalizar-compra {
+    margin-top: 300px;
+}
+
+
+@media (max-width: 600px) {
+    #titulo-cesta {
+        margin-top:450px;
+    }
+    .titulo-direccion {
+        
+        margin-top:450px;
+    }
+    
 }
 
 

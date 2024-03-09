@@ -1,19 +1,16 @@
 import { listaProductos } from './obtenerProductos.js';
 import { maxProductosPorPagina } from './paginacion.js';
 
-
-
 // Obtener el valor del enlace
 const valorEnlace = location.href.split('?')[1];
 
 // Filtro de busqueda
 let filtroBusqueda = "";
 
-// Poner el titulo en la página
+// Pone el titulo en la página
 document.getElementById("titulo-producto").innerHTML = "Productos de " + valorEnlace;
 
-
-
+// Muestra unos pocos productos por cada página
 const filtraProductosPorPagina = (pagina=1)=>{
     const listaCardProductos = document.getElementById('listado-productos');
 
@@ -40,16 +37,11 @@ const filtraProductosPorPagina = (pagina=1)=>{
           filasSinFiltradoTexto[i].classList.add('d-none');
         }
     }
-    /*for (let i=0;i< filasSinFiltradoTexto.length; i++){
-        
-        console.log(filasSinFiltradoTexto[i]);
-        
-    }*/
-
+    
     obtenPaginacion(pagina,paginas);
     
 };
-
+// Muestra los productos al pasar los filtros
 function mostrarProductos(listadoProductos) {
     const contenedorListado = document.getElementById('listado-productos');
 
@@ -63,16 +55,14 @@ function mostrarProductos(listadoProductos) {
         return;
     }
     
-    // Filtra por el nombre de producto
+    // Filtra los productos por la categoria seleccionada en la barra principal
     const productosFiltrados = filtrarCategoria(listadoProductos);
-    console.log("productos filtrados")
-    console.log(productosFiltrados);
+    
     // Obtener el elemento html para la paginación
     const paginas = Math.ceil(productosFiltrados.length/maxProductosPorPagina);
-    console.log("paginas" + paginas);
+    
     const paginacionHTML = obtenPaginacion(1,paginas);
-    console.log("paginacion obtener")
-    console.log(paginacionHTML);
+    
     
     const productoIndividual = productosFiltrados.map(pro => 
         `<div data-cardproducto="" class="col-4">
@@ -103,7 +93,7 @@ function mostrarProductos(listadoProductos) {
         if (e.target.tagName !== 'A') return;
         if (!e.target.closest('#navPaginacion')) return;
         if (!e.target.parentElement.dataset.pagina) return;
-        console.log(e.target.parentElement.dataset.pagina);
+        
         filtraProductosPorPagina(+e.target.parentElement.dataset.pagina);
       });
 
@@ -111,7 +101,7 @@ function mostrarProductos(listadoProductos) {
 
       
 };
-
+// Obtiene el código html de la paginación 
 function obtenPaginacion(pagina, paginas){
     const navPaginacion = document.getElementById('navPaginacion');
   
@@ -151,6 +141,7 @@ function obtenPaginacion(pagina, paginas){
 
 mostrarProductos(listaProductos);
 
+// Ordena los productos de precio de menor a mayor
 function ordenarPrecioMenorMayor(listadoProductos) {
     
     const productosFiltrados = filtrarCategoria(listadoProductos);
@@ -161,7 +152,7 @@ function ordenarPrecioMenorMayor(listadoProductos) {
 
     mostrarProductos(productosMenorMayor);
 }
-
+// Ordena los productos de precio de mayor a menor
 function ordenarPrecioMayorMenor(listadoProductos) {
     
     const productosFiltrados = filtrarCategoria(listadoProductos);
@@ -172,7 +163,7 @@ function ordenarPrecioMayorMenor(listadoProductos) {
 
     mostrarProductos(productosMayorMenor);
 }
-
+// Ordena los productos por nombre
 function ordenarPorNombre(listadoProductos) {
 
     const productosFiltrados = filtrarCategoria(listadoProductos);
@@ -183,7 +174,7 @@ function ordenarPorNombre(listadoProductos) {
     
     mostrarProductos(productosOrdenadosPorNombre);
 }
-
+// Ordena los productos por los más vendidos
 function ordenarPorMasVendidos(listadoProductos) {
 
     const productosFiltrados = filtrarCategoria(listadoProductos);
@@ -193,18 +184,19 @@ function ordenarPorMasVendidos(listadoProductos) {
     mostrarProductos(productosMasVendidos);
 }
 
-
+// Filtra por la categoria seleccionada
 function filtrarCategoria (listadoProductos) {
     const productosFiltrados = listadoProductos.filter(pro => pro.nombreCategoria === valorEnlace);
     return productosFiltrados;
 }
-
+// Filtra los productos desde la barra de busqueda , puede ser por nombre o descripción
+// Por defecto filtra la busqueda por nombre
 function filtrarProductosPorBusqueda (texto , listadoProductos , filtroBusqueda) {
     const textoMinuscula = texto.toLowerCase();
     let productosBusqueda;
     // Filtra por la categoria
     const productosFiltrados = filtrarCategoria(listadoProductos);
-
+    
     if (filtroBusqueda === 'nombre') {
         productosBusqueda = productosFiltrados.filter(producto => producto.nombreProducto.toLowerCase().includes(textoMinuscula));
     } else if (filtroBusqueda === 'descripcion') {
@@ -216,7 +208,7 @@ function filtrarProductosPorBusqueda (texto , listadoProductos , filtroBusqueda)
     mostrarProductos(productosBusqueda);
 
 }
-
+// Filtra los productos por stock
 function ordenarPorStock(listaProductos) {
     const productosFiltrados = filtrarCategoria(listaProductos);
 
@@ -224,7 +216,7 @@ function ordenarPorStock(listaProductos) {
 
     mostrarProductos(productosConStock);
 }
-
+// Filtra los productos sin stock
 function ordenarSinStock(listaProductos) {
     const productosFiltrados = filtrarCategoria(listaProductos);
 
@@ -233,6 +225,7 @@ function ordenarSinStock(listaProductos) {
     mostrarProductos(productosSinStock);
 }
 
+// Evento para el filtrado por stock de los productos
 document.getElementById('id-filtro').addEventListener('click' , evento => {
     
     if (evento.target.tagName !== 'INPUT') return;
@@ -253,12 +246,12 @@ document.getElementById('id-filtro').addEventListener('click' , evento => {
 
 
 
-// Se prohibe que los dos filtros se seleccionen a la vez
+// Evento para la selección de los filtros de busqueda
 document.getElementById('filtrosBusqueda').addEventListener('click' , e => {
     if (e.target.tagName !== 'INPUT') return;
 
     const seleccionBusqueda = e.target.dataset.busqueda;
-    
+    // Se prohibe que los dos filtros se seleccionen a la vez
     if (seleccionBusqueda === 'nombre') {
         document.getElementById('busqueda-descripcion').checked = false;
     }
@@ -270,13 +263,13 @@ document.getElementById('filtrosBusqueda').addEventListener('click' , e => {
     
     
 });
-
+// Evento para el filtrado de busqueda
 document.getElementById('input-buscador').addEventListener('input' , (evento) => {
     
     filtrarProductosPorBusqueda(evento.target.value , listaProductos , filtroBusqueda);
 });
 
-
+// Evento para los distintas opciones de ordenación de los productos
 document.getElementById('ordenarPrecio').addEventListener('input' , (evento) => {
 
     if (evento.target.dataset.precio === 'menor-mayor') {

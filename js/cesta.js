@@ -85,7 +85,7 @@ document.getElementById('tabla-productos-cesta').addEventListener('click' ,  (ev
     
     const nombreProdutoEliminar = evento.target.dataset.nombreproducto;
     
-    const listaNueva = listaProductosCesta.filter(p => p.nombreProducto !== nombreProdutoEliminar);
+    const listaNueva = listaProductosCestaArray.filter(p => p.nombreProducto !== nombreProdutoEliminar);
     
     localStorage.setItem('cesta' , JSON.stringify(listaNueva));
     

@@ -1,10 +1,10 @@
 import { listaProductos } from "./obtenerProductos.js";
 
 
-
+// Muestra el producto en la página
 const productoComprar = (listaProductos) => {
     const contenedorProducto = document.getElementById('producto-comprar');
-    
+    // Obtiene el id del producto mediante el enlace
     const idEnlace = +location.href.split('=')[1];
     
     const productoId = listaProductos.filter(pro =>{
@@ -16,7 +16,7 @@ const productoComprar = (listaProductos) => {
         `<div>
             <img id="imagen-producto" class="imagen-producto-comprar" src="${pro.imagen}">
         </div>
-        <div class="w-25">
+        <div  class="w-25 producto-comprar-individual">
             <div class="d-flex flex-column">
                 <h1 id="nombre-producto">${pro.nombreProducto}</h1>
                 <p id="precio-producto">${pro.precio} €</p>
@@ -64,12 +64,13 @@ const productoComprar = (listaProductos) => {
 
 productoComprar(listaProductos);
 
+// Aumenta la cantidad de un productos a comprar
 function aumentar () {
     const contenedor = document.getElementById('cantidad-productos');
     const cantidadProductosComprar = +document.getElementById('cantidad-productos').textContent;
     contenedor.innerHTML = cantidadProductosComprar + 1;
 }
-
+// Reduce en uno la cantidad de un productos a comprar
 function disminuir () {
     const contenedor = document.getElementById('cantidad-productos');
     const cantidadProductosComprar = +document.getElementById('cantidad-productos').textContent;
@@ -79,15 +80,16 @@ function disminuir () {
         contenedor.innerHTML = cantidadProductosComprar - 1;
     }
 }
-
+// Evento botón aumentar
 document.getElementById('aumentar-puntuacion').addEventListener('click' , () => {
     aumentar();
 });
-
+// Evento botón reducir
 document.getElementById('disminuir-puntuacion').addEventListener('click' , () => {
     disminuir();
 });
 
+// Añade un nuevo objeto al localStorage referente al producto a comprar
 document.getElementById('comprar-producto-boton').addEventListener('click' , () => {
     const cantidadProductosComprar = +document.getElementById('cantidad-productos').textContent;
     let precioProducto = document.getElementById('precio-producto').textContent;
@@ -153,29 +155,12 @@ function anadirProductoCesta (producto) {
             localStorage.setItem('cesta' , JSON.stringify(arrayProductosAnadir));
 
         }
+
         return ;
 
 }
 
 
-
-
-/*const mostrarProductosCarrito = (listaProductos) => {
-
-    const contenedorCestaProductos = document.getElementById('lista-productos');
-
-    const listaProductosCesta = listaProductos.map(pro => {
-        `<div class="d-flex">
-            <p id="imagen">${pro.imagenProducto}</p>
-            <p id="nombre">${pro.nombreProducto}</p>
-        </div>
-        <p id="precio"> ${pro.cantidadProductosComprar} x ${pro.precio}</p>
-        <p id="total">Total: ${pro.cantidadProductosComprar * pro.precio}</p><span> Iva incluido</span>"`
-    }).join('');
-    console.log(listaProductosCesta);
-    contenedorCestaProductos.innerHTML = listaProductosCesta;
-
-}*/
 
 
 
